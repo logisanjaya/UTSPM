@@ -124,14 +124,14 @@ fun HomePagerScreen(
                             contentDescription = title
                         )
                     },
-                    unselectedContentColor = MaterialTheme.colorScheme.secondary
+                    unselectedContentColor = MaterialTheme.colorScheme.error
                 )
             }
         }
 
         // Pages
         HorizontalPager(
-            modifier = Modifier.background(MaterialTheme.colorScheme.background),
+            modifier = Modifier.background(MaterialTheme.colorScheme.error),
             pageCount = pages.size,
             state = pagerState,
             verticalAlignment = Alignment.Top
